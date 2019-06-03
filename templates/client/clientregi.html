@@ -1,0 +1,40 @@
+<html>
+<head>
+
+</head>
+<body>
+<tr><th>{% include 'main/main_title.html' %}</th></tr>
+
+<table><tr><th>
+<form action="/client_client/clientreg/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<table>
+{{ form }}
+
+        <tr><th><button type="submit">save</button></th></tr>
+</table> </th>
+</form>
+<th>
+<table align="right" border="2">
+{% if data %}
+    {% for x in data %}
+        <tr><th>{{ x.name }}</th></tr>
+        <tr><th>{{ x.address }}</th></tr>
+        <tr><th>{{ x.username }}</th></tr>
+        <tr><th>{{ x.password }}</th></tr>
+        <tr><th><img src="{{ x.photo.url }}" width="150" height="150"></th></tr>
+        <tr><th>{{ x.contact }}</th></tr>
+    {% endfor %}
+{% endif %}
+</table></th>
+</tr></table>
+
+
+    <table>
+        <tr><th>
+            <a href="/client_client/client_home/">  click here</a> to login
+        </th></tr>
+    </table>
+</form>
+</body>
+</html>

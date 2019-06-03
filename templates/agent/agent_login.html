@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<html>
+<body>
+<table>
+    <tr><th>{% include 'main/main_title.html' %}</th></tr>
+    <tr><th>{% include 'main/main_bar.html' %}</th></tr></table>
+<table>
+    <tr><th><img src="{% static 'images/user_page.png'  %}  " width="250"></th></tr>
+</table>
+<table><tr><th><input type="text" name="uname" placeholder="username" required></th></tr></table>
+<table><tr><th><input type="password" name="pswd" placeholder="password" required></th></tr></table>
+   <center> <tr><th class="btn-success"><button type="submit">submit</button> </th></tr> </center>
+
+
+
+</body>
+</html>

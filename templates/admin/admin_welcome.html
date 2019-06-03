@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+
+{% if request.session.sta %}
+<body>
+<table>
+    <tr><th>{% include 'main/main_title.html' %}</th></tr>
+    </table>
+<table align="center" border="0">
+    <tr><th ><a href="/admin_admin/adminwel/">Home</a> </th>
+    <th ><a href="/admin_admin/adminwelcome1/">Agent</a> </th>
+    <th ><a href="//">Client</a> </th>
+    <th ><a href="//">Property</a> </th>
+    <th ><a href="//">Complaint</a> </th>
+    <th ><a href="/admin_admin/agent_logout/">Logout</a> </th></tr>
+</table>
+<center><h1>welcome admin</h1></center>
+</body>
+{% else %}
+<h1>
+    plz login
+</h1>
+{% endif %}
+</html>

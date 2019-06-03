@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/client_client/sendotp/" method="post">
+    {% csrf_token %}
+<table>
+    <tr><th>{% include 'main/main_title.html' %}</th></tr>
+    <tr><th>{% include 'main/main_bar.html' %}</th></tr></table>
+<table><tr><th><img src="{% static 'images/client_page.jpg' %}" width="250"></th></tr>
+</table>
+<table>
+    <tr><th><input type="text" required name="cun" placeholder="enter user name"></th></tr>
+    <tr><th><input type="password" required name="cpswd" placeholder="enter password"></th></tr>
+    <tr><th class="btn-success"><button type="submit">submit</button> </th></tr>
+</table>
+</form>
+
+ <h3>are you a new user please<a href="/client_client/clientregi/">clickhere</a>to Register</h3>
+
+
+</body>
+
+
+</html>

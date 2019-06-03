@@ -1,0 +1,88 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <STYLE>
+        table{
+            width: 100%;
+        }
+        div{
+            width: 100%;
+        }
+
+        nav{
+            text-align: left;
+            background-color: hotpink;
+            width: 100%;
+            color: red;
+            text-decoration: none;
+
+        }
+    </STYLE>
+</head>
+<body>
+
+<table>
+    <tr><th>{% include 'main/main_title.html' %}</th></tr>
+    <tr><th>{% include 'main/main_bar.html' %}</th></tr></table>
+<div class="container">
+    <div class="row" >
+        <div class="col-md-4" >
+            <img src="{% static 'images/plots1.jpg' %}" width="100%"></th>
+            <img src="{% static 'images/plots2.jpg' %}" width="100%"></th>
+            <img src="{% static 'images/plots3.jpg' %}" width="100%"></th>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/plots8.jpg' %}" width="100%"></th>
+        <img src="{% static 'images/plots4.jpg' %}" width="100%"></th>
+        <img src="{% static 'images/plots5.jpg' %}" width="100%"></th>
+        </div>
+    </div>
+    <div class="">
+        <div class="col-md-4">
+            <img src="{% static 'images/plots6.jpg' %}" width="100%"></th>
+        <img src="{% static 'images/plots7.jpg' %}" width="100%"></th>
+        <img src="{% static 'images/plots9.jpg' %}" width="100%"></th>
+        </div>
+    </div>
+{#</div>#}
+{#    <tbody>#}
+{#    <table>#}
+{#    <tr>#}
+{##}
+{##}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th width="200"><img src="{% static 'images/plots5.jpg' %}"></th>#}
+{#        <th width="200"><img src="{% static 'images/plots6.jpg' %}"></th>#}
+{#        <th width="200"><img src="{% static 'images/plots4.jpg' %}"></th>#}
+{#    </tr>#}
+{##}
+{#    <tr>#}
+{#        <th><img src="{% static 'images/plots9.jpg' %}"></th>#}
+{#        <th><img src="{% static 'images/plots7.jpg' %}"></th>#}
+{#        <th><img src="{% static 'images/plots8.jpg' %}"></th>#}
+{#    </tr>#}
+{#    <tr>#}
+{##}
+{#        <th><img src="{% static 'images/plots10.jpg' %}"></th>#}
+{#    </tr>#}
+{##}
+{#        </table>#}
+{#    </tbody>#}
+{##}
+
+</body>
+</html>

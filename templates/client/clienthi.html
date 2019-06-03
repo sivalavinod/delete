@@ -1,0 +1,18 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<h3>welcomre to client page</h3>
+
+<tr><th>{% include 'main/main_title.html' %}</th></tr>
+
+<form action="/client_client/clientlogout/" method="post">
+    {% csrf_token %}
+    <table align="right">
+    <button type="submit">logout</button>
+        </table>
+</form>
+</body>
+</html>

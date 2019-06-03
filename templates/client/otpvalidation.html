@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<html>
+<head>
+
+</head>
+<body>
+{% include 'main/main_bar.html' %}
+<form action="/client_client/otpvalidation/" method="post">
+    {% csrf_token %}
+
+<table>
+    <tr>
+        <th>
+           <img src="{% static 'images/client_page.jpg' %}">
+        </th>
+        <th><input type="password" name="otp" placeholder="otp" required></th>
+        <th><button type="submit">verify otp</button> </th>
+    </tr>
+</table>
+    </form>
+</body>
+</html>
